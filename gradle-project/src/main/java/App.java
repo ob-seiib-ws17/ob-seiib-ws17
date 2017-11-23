@@ -1,22 +1,34 @@
 public class App {
   public static void main(String[] args) {
-    // Argumente einlesen und umwandlen
-    final int a =  Integer.parseInt(args[0]);
-    final int b =  Integer.parseInt(args[1]);
-    final int c =  Integer.parseInt(args[2]);
 
-    // eigentliche Berechnung
-    int max = a;
+    boolean boo;
 
-    if (b > max) {
-      max = b;
-      System.out.printf("Setze b");
+    boo = 5 < 7 && ! (7 < 9);
+
+    boolean foo = boo;
+
+    boolean booAndfoo = boo && foo;
+    boolean booOrfoo = !(boo || foo);
+
+    System.out.println(boo);
+    System.out.println(foo);
+    System.out.println(booAndfoo);
+    System.out.println(booOrfoo);
+
+    double a = -7.0;
+    double b = 0;
+
+    if (b != 0 && a / b > 0) {
+      System.out.println("a / b > 0");
+    } else {
+      System.out.println("a / b <= 0" + (a/b) + 3);
     }
-
-    if (c > max)
-      max = c;
-
-    // Ausgabe
-    System.out.printf("max = %d%n", max);
   }
+
+  int temperature = -12;
+  boolean snow = temperature <= 0;
+
+  if (!snow)
+    System.out.println("Es schneit nicht!");
+
 }
