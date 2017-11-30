@@ -1,4 +1,4 @@
-public class App {
+class App {
   public static void main(String[] args) {
 
     boolean boo;
@@ -21,14 +21,15 @@ public class App {
     if (b != 0 && a / b > 0) {
       System.out.println("a / b > 0");
     } else {
-      System.out.println("a / b <= 0" + (a/b) + 3);
+      System.out.println("a / b <= 0" + (a / b) + 3);
     }
 
     int temperature = -12;
     boolean snow = temperature <= 0;
 
-    if (!snow)
+    if (!snow) {
       System.out.println("Es schneit nicht!");
+    }
 
   }
 }
