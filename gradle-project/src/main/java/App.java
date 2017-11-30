@@ -23,12 +23,12 @@ public class App {
     } else {
       System.out.println("a / b <= 0" + (a/b) + 3);
     }
+
+    int temperature = -12;
+    boolean snow = temperature <= 0;
+
+    if (!snow)
+      System.out.println("Es schneit nicht!");
+
   }
-
-  int temperature = -12;
-  boolean snow = temperature <= 0;
-
-  if (!snow)
-    System.out.println("Es schneit nicht!");
-
 }
