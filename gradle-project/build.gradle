@@ -43,4 +43,5 @@ dependencies {
 
 // mainClassName = 'DifferenceGcd'
 // mainClassName = 'EuclidGcd'
-mainClassName = 'MultiplicationTable'
+//mainClassName = 'MultiplicationTable'
+mainClassName = 'App'

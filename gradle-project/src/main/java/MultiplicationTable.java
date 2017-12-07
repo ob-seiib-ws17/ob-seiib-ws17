@@ -8,6 +8,9 @@ class MultiplicationTable {
       while (column <= maximum) { // innere Schleife
         // System.out.printf("%4d", zeile * spalte);
         // spalte = spalte + 1;
+        if (column == 3) {
+          break;
+        }
         System.out.println("Spalte = " + column++);
       }
       ++row;
