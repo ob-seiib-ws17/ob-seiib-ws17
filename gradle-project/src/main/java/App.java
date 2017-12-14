@@ -1,20 +1,20 @@
 class App {
   public static void main(String[] args) {
 
-    int i = 0;
-    while (i < 10) {
-      System.out.println(i);
-      //continue;
-      i += 2;
-    }
+    int i = 5;
 
-    System.out.println(i);
+    Rational r = null;
 
-    for (int j = 0; j < 10 ; j += 2) {
-      if (j < 5) continue;
-      System.out.println(j);
-    }
+    r = new Rational();
 
-    // System.out.println(j);
+    i = 7;
+
+    r.numer = 5;
+    r.denom = 3;
+
+    i = i + 2;
+
+    i = r.numer + 5 * r.denom;
+
   }
 }
