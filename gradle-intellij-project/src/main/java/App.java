@@ -2,19 +2,31 @@ class App {
   public static void main(String[] args) {
 
     Rational a = new Rational();
-    a.numer = 1;
-    a.denom = 9;
+    a.set(1,9);
 
+
+    Rational b = new Rational();
+    b.set(2,1);
+
+
+    a.mult(b);
+
+
+    // int x = ...
+
+    // a.extend(x);
 
     a.print();
 
-    a.extend(2 * a.numer / (int) Math.sqrt(6)) ;
+    a.setZero();
 
-    a.extend(3);
+    // a.extend(2 * a.numer / (int) Math.sqrt(6)) ;
 
-    a.extend(123);
+    // a.extend(1,2);
 
-    a.extend(5);
+    a.extend(123 + 1);
+
+    // a.extend(5);
 
     // System.out.printf("%d/%d%n", a.numer, a.denom);
 
